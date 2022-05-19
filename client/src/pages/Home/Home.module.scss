@@ -1,0 +1,24 @@
+.explore-btn {
+    float: left;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.name-text {
+    font-weight: bold;
+}
+
+.address-text {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.user-name {
+    font-style: normal;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+        color: aquamarine;
+    }
+}

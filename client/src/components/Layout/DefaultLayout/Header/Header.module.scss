@@ -1,0 +1,129 @@
+ul {
+    margin-bottom: 0;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navContent {
+    display: flex;
+    width: 100%;
+    padding: 10px 100px 10px 35px;
+}
+
+.navContent img {
+    margin-right: 28px;
+    cursor: pointer;
+    width: 78px;
+    height: 41px;
+    background-color: #bbb;
+    opacity: 0.8;
+}
+
+.navContent > ul {
+    width: 40%;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.navContent > ul::before {
+    content: '';
+    background-color: #000000;
+    width: 1px;
+    position: absolute;
+    height: 40px;
+    top: 10%;
+    left: -2%;
+    opacity: 0.1;
+}
+
+.navContent > ul > li {
+    line-height: 42px;
+    font-weight: 400;
+}
+
+.routeLink {
+    text-decoration: none;
+    color: #000000;
+    line-height: 42px;
+    font-weight: 400;
+}
+
+.routeLink:hover {
+    color: #1ec6b6;
+    cursor: pointer;
+}
+
+.navContent > ul > li:hover {
+    color: #1ec6b6;
+    cursor: pointer;
+}
+
+.navSearchBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+
+    cursor: pointer;
+
+    margin-right: -5px;
+}
+
+.navSearchBtn i {
+    width: 100%;
+    line-height: 62px;
+    text-align: center;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.auth-box {
+    min-width: 200px;
+    min-height: 96px;
+    background-color: #eee;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    pointer-events: initial;
+    border: 0.5px solid #1ec6b6;
+    position: relative;
+}
+
+.auth-item {
+    min-width: 200px;
+    padding: 12px;
+    position: absolute;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #1ec6b6;
+        color: #fff;
+
+        * {
+            background-color: #1ec6b6;
+            color: #fff;
+        }
+    }
+}
+
+.auth-item + .auth-item {
+    margin-top: 48px;
+}
+
+.logout-btn {
+    margin-left: -12px;
+    width: 100%;
+    text-align: left;
+    text-indent: 6px;
+}

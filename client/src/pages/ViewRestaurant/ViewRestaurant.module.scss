@@ -1,0 +1,37 @@
+.name {
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #222;
+    letter-spacing: 1px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.information-list {
+    margin-bottom: 24px;
+}
+
+.information-list > li {
+    margin-bottom: 16px;
+    font-size: small;
+
+    i {
+        margin-right: 4px;
+    }
+}
+
+.user-name {
+    font-style: normal;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+        color: rgb(84, 132, 15);
+    }
+}
+
+.description {
+    font-size: 1.2rem;
+}
